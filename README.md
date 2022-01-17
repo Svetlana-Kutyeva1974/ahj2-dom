@@ -1,3 +1,7 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/317cl7pwrfrfty4v?svg=true)](https://ci.appveyor.com/project/Svetlana-Kutyeva1974/ahj2-dom)
+main branch status badge
+
+# [deployment](https://svetlana-kutyeva1974.github.io/ahj2-dom/) 
 
 Правила сдачи задания:
 
