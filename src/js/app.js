@@ -1,17 +1,17 @@
-import { renderBoard } from './board.js';
+import renderBoard from './board';
 
-let newBoard = [];
-let fieldSize = 4;
-let boardEl = document.getElementById('board');
+const newBoard = [];
+const fieldSize = 4;
+// const boardEl = document.getElementById('board');
 
 function fillNewBoard() {
   console.log(newBoard);
-  for (let i = 0; i < fieldSize; i++) {
+  for (let i = 0; i < fieldSize; i += 1) {
     newBoard[i] = [];
-    for (let j = 0; j < fieldSize; j++) {
+    for (let j = 0; j < fieldSize; j += 1) {
       console.log(i);
       console.log(j);
-      newBoard[i][j] = "";
+      newBoard[i][j] = '';
       console.log(newBoard);
     }
   }
