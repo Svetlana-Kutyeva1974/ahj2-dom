@@ -2,10 +2,11 @@ import renderBoard from './board.js';
 import png from '../img/goblin.png';
 // block отрисовки
 
-const newBoard = [];
+//
 const fieldSize = 4;
 
 function fillNewBoard() {
+  const newBoard = [];
   console.log(newBoard);
   for (let i = 0; i < fieldSize; i += 1) {
     newBoard[i] = [];
@@ -13,10 +14,11 @@ function fillNewBoard() {
       newBoard[i][j] = '';
     }
   }
+  return newBoard;
 }
 
-fillNewBoard();
-renderBoard(newBoard);
+// fillNewBoard();
+renderBoard(fillNewBoard());
 
 // ynew blocl logic
 const arrField = Array.from(document.getElementsByClassName('field')); // все поля
@@ -58,7 +60,7 @@ function changeField() {
   console.log('удаляем -', deletable);
 
   arrField[t].classList.remove('busy');
-  arrField[t].classList.add('.free');
+  arrField[t].classList.add('free');
   deletable.remove();
   drawField();
 }
