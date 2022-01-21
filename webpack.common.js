@@ -38,11 +38,19 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
+              mimetype: './img/png',
+            },
+            /*options: {
               limit: 8192,
             },
+            */
           },
         ],
       },
+      //{
+      //  test: /\.(?:jpg|jpeg|png|gif|ico)$/,
+      //  type: 'asset/resource',
+      //},
       {
         test: /\.svg$/,
         type: 'asset/resource',
